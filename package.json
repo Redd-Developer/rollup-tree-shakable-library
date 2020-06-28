@@ -1,0 +1,22 @@
+{
+  "name": "rollup-tree-shaking",
+  "version": "0.0.0",
+  "description": "Building a tree-shakable library with RollupJS (redd.one)",
+  "main": "build/cjs/index.js",
+  "module": "build/esm/index.js",
+  "scripts": {
+    "clean": "rimraf build consumer/build",
+    "build": "rollup -c rollup.config.js",
+    "build:consumer": "rollup -c rollup.consumer.config.js",
+    "test": "./test.sh"
+  },
+  "repository": "https://github.com/Redd-Developer/rollup-tree-shaking",
+  "author": "Artem Zakharchenko <kettanaito@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://redd.one",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^8.1.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.18.1"
+  }
+}
